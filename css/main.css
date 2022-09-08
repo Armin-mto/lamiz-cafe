@@ -89,3 +89,41 @@ a {
 .btn-container a:hover {
     color: #250029;
 }
+
+/* side nav */
+
+.side-nav {
+    background-color: #250029;
+    width: 200px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: -200px;
+    text-align: center;
+    transition: .5s;
+}
+
+.side-nav ul {
+    margin-top: 120px;
+}
+
+.side-nav ul li {
+    list-style: none;
+    margin-top: 70px;
+    font-size: 1.6rem;
+}
+
+.menu-btn {
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 7px;
+    position: fixed;
+    top: 15px;
+    right: 15px;
+}
+
+.menu-btn img {
+    margin: 10px;
+    width: 30px;
+}
