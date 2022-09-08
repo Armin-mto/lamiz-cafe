@@ -9,3 +9,83 @@
     box-sizing: border-box;
     font-family: Almond;
 }
+
+html {
+    font-size: 16px;
+}
+
+h1 {
+    font-size: 5rem;
+    color: rgba(255, 255, 255, 0.87);
+}
+
+p {
+    font-size: 3rem;
+    color: rgba(255, 255, 255, 0.87);
+}
+
+a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.87);
+    font-size: 2rem;
+}
+
+
+/* banner */
+
+.banner-container {
+    background: linear-gradient(rgba(0 ,0 , .2, .0) , #250029) , url(../image/pexels-jason-villanueva-851555.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+}
+
+.banner-container > img {
+    width: 110px;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
+
+.title-container {
+    position: absolute;
+    top: 45%;
+    left: 10%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+
+.btn-container {
+    margin: 30px;
+}
+
+.btn-container a {
+    display: inline-block;
+    padding: 0 20px;
+    border: 1px solid rgba(255, 255, 255, 0.87);
+    margin: 0 15px;
+    position: relative;
+    z-index: 1;
+    font-weight: 500;
+    transition: .5s;
+}
+
+.btn-container a span {
+    width: 0;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.87);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: .5s;
+}
+
+.btn-container a:hover span {
+    width: 100%;
+}
+
+.btn-container a:hover {
+    color: #250029;
+}
